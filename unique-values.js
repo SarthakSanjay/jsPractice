@@ -33,3 +33,16 @@ const menu = [
     },
 ]
 
+// to get all category
+
+const categories = menu.map((items) => items.category)
+console.log(categories)
+
+// to get only the unique values we need to use Set datastrustue
+const unique_categories = new Set( menu.map((items) => items.category))
+console.log(unique_categories)
+
+// but this is an object ,we need to convert it into array
+const _categories = [...new Set( menu.map((items) => items.category))]
+console.log(_categories)
+
