@@ -46,3 +46,7 @@ console.log(unique_categories)
 const _categories = [...new Set( menu.map((items) => items.category))]
 console.log(_categories)
 
+// to add other items in array
+const o_categories = ['all',...new Set( menu.map((items) => items.category))]
+console.log(o_categories)
+
