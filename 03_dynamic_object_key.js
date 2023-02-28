@@ -33,10 +33,13 @@ movies["top-movies"].map((movie)=> console.log(movie))
 let videoState = 'loading'
 videoState = 'error'
 const keyName = "laptop"  // key value
+const newKeyName = "mobile"
 const app = {
     [videoState] : true
 }
 
 app[keyName] = "apple" // key name
-console.log(app)
 
+
+app[newKeyName] = "orange"
+console.log(app)
