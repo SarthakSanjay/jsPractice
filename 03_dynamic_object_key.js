@@ -54,8 +54,10 @@ function updateState(key,value){
     state[key] = value
 }
 
-updateState("name" ,"akshay")
+updateState("name" ,"akshay") //set value of keys
 updateState("age" , 55)
-updateState("loading" , false)
+updateState("loading" , false) // update existing value
+updateState("job" , "developer") // add new value
+ // all using square bracket notation -> line no 54
 
 console.log(state)
