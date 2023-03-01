@@ -26,5 +26,19 @@ console.log(youngster)
 
 const devs = humans.filter((person) => person.position === "developer")
 console.log(devs)
+ 
 const ceo = humans.filter((person) => person.position === "CEO")
 console.log(ceo)
+
+//if condition don't match returns empty array
+const teacher = humans.filter((person) => person.position === "teacher")
+console.log(teacher)
+
+// for array of strings
+const professions = ["actor" ,"wrestlers" , "developers" , "engineers" , "businessman"]
+let specificPosition = professions.filter((items) => items === "actor")
+console.log(specificPosition)
+
+
+const akshay = humans.find((person) => person.name === "akshay")
+console.log(akshay)
