@@ -1,6 +1,6 @@
 // filter - returns a new array , can manipulate the size of new array ( unlike map) , returns based on condition
 
-// find - returns singal instance (object ) , returns first match if not found returns undefined
+// find - returns singal instance  , returns first match if not found returns undefined
 
 let arr= [ 1,2,3,4,5,6,76,7,8,4]
 
@@ -29,6 +29,7 @@ console.log(devs)
  
 const ceo = humans.filter((person) => person.position === "CEO")
 console.log(ceo)
+console.log(ceo[0].age)
 
 //if condition don't match returns empty array
 const teacher = humans.filter((person) => person.position === "teacher")
@@ -41,4 +42,10 @@ console.log(specificPosition)
 
 
 const akshay = humans.find((person) => person.name === "akshay")
+// if not found returns undifined
 console.log(akshay)
+console.log(akshay.age)
+
+
+const wrestlers = professions.find((item) => item === "wrestlers")
+console.log(wrestlers)
