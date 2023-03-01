@@ -43,3 +43,19 @@ app[keyName] = "apple" // key name
 
 app[newKeyName] = "orange"
 console.log(app)
+
+const state = {
+    loading : true,
+    name: "",
+    age:""
+}
+
+function updateState(key,value){
+    state[key] = value
+}
+
+updateState("name" ,"akshay")
+updateState("age" , 55)
+updateState("loading" , false)
+
+console.log(state)
