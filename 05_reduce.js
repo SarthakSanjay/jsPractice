@@ -69,9 +69,15 @@ const humans = [
         const response = await fetch(url)
         const data = await response.json()
         const newData = data.reduce((total,repo)=>{
+            const {language} = repo
+            if(total[language]){
+                total[language] += 1
+            }else{
+                total[language] = 1
+            }
             return total
         },{})
+        console.log(newData)
     }
-    cosno
 
     fetchRepos()
